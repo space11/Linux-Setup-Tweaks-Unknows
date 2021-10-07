@@ -16,3 +16,6 @@
 * PulseAudio Voulume controll  
 `sudo apt install pavucontrol`
 
+# Set System limit for number of file watchers  
+- set max_user_watches then reload and apply system parameters to the current system
+`echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
