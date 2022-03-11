@@ -29,3 +29,10 @@ unzip ngrok-stable-linux-amd64.zip
 sudo mv ./ngrok /usr/bin/ngrok
 ngrok
 ```
+
+# How to kill a process running on particular port in Linux?
+`sudo fuser -k 9229/tcp`
+`npx kill-port 9229`
+
+
+
