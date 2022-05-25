@@ -34,5 +34,6 @@ ngrok
 `sudo fuser -k 9229/tcp`
 `npx kill-port 9229`
 
-
-
+# Gnome screenshot tools crashing when selecting area
+- Looks like a Ubuntu boog. Tool is crashing when clipboard wasn't empty when taking the screenshot. [Refs & Credit](https://askubuntu.com/questions/1227402/gnome-screenshot-area-selection-causing-freezes)  
+`xclip -selection clipboard /dev/null`
