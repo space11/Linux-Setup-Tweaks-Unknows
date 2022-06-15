@@ -37,3 +37,7 @@ ngrok
 # Gnome screenshot tools crashing when selecting area
 - Looks like a Ubuntu bug. Tool is crashing when clipboard wasn't empty when taking the screenshot. [Refs & Credit](https://askubuntu.com/questions/1227402/gnome-screenshot-area-selection-causing-freezes)  
 `xclip -selection clipboard /dev/null`
+
+# How do I set a hotkey for toggling the microphone on/off?
+Credits / source: [https://forums.linuxmint.com/viewtopic.php?t=294680](https://forums.linuxmint.com/viewtopic.php?t=294680)  
+`Keyboard shortcuts > Microphone mute/unmute`
