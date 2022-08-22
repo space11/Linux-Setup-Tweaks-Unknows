@@ -41,3 +41,23 @@ ngrok
 # How do I set a hotkey for toggling the microphone on/off?
 Credits / source: [https://forums.linuxmint.com/viewtopic.php?t=294680](https://forums.linuxmint.com/viewtopic.php?t=294680)  
 `Keyboard shortcuts > Microphone mute/unmute`
+
+# List available smb shares on a network
+Credits / source: [https://serverfault.com/a/166255](https://serverfault.com/a/166255)  
+This command is a very little known secret of Samba. It returns IP adresses of all Samba servers in one's own broadcast domain:
+
+`nmblookup __SAMBA__`
+
+This one returns a list of all NetBIOS names and their aliases of all Samba servers in the neighbourhood (it does a 'node status query'):
+
+`nmblookup -S __SAMBA__`
+
+This one returns a list of all IP adresses of SMB servers (that is, Linux+Unix/Samba or Windows) in the neighbourhood:
+
+`nmblookup '*'`
+
+Finally, all NetBIOS names and their aliases of all SMB servers (Linux+Unix/Samba or Windows):
+
+`nmblookup -S '*'`
+
+
