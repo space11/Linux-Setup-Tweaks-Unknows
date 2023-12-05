@@ -62,3 +62,16 @@ Finally, all NetBIOS names and their aliases of all SMB servers (Linux+Unix/Samb
 
 ## APT check available packages - installed and candidates for install
 `apt-cache policy nvim`
+
+## Linux CLI
+
+### `grep` snippets
+
+Search for a specific pattern or text in files within a directory and its subdirectories recursively. 
+
+```bash
+grep -rn "pattern" /path/to/search
+grep -rn "example" .
+```
+
+The `.` represents the current directory. Adjust the pattern and path as needed for your specific use case.
