@@ -75,3 +75,10 @@ grep -rn "example" .
 ```
 
 The `.` represents the current directory. Adjust the pattern and path as needed for your specific use case.
+
+# Audio Video
+
+## Edit video tracks - remove embeded subtitles
+https://github.com/mifi/lossless-cut?tab=readme-ov-file
+
+
