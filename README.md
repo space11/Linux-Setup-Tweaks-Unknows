@@ -14,7 +14,7 @@
 
 ## Audio
 * PulseAudio Voulume controll  
-`sudo apt install pavucontrol`
+`sudo apt install pavucontrol`Fcli
 
 ## Set System limit for number of file watchers  
 - set max_user_watches then reload and apply system parameters to the current system  
@@ -66,6 +66,16 @@ Finally, all NetBIOS names and their aliases of all SMB servers (Linux+Unix/Samb
 ## Linux CLI
 
 ### `grep` snippets
+
+### alternatives
+- Add manually Neovim to alternatives list
+```bash
+sudo update-alternatives --install /usr/bin/editor editor /snap/bin/nvim 1111
+```
+- Change the default edtiro
+```bash
+sudo update-alternatives --config editor 
+```
 
 Search for a specific pattern or text in files within a directory and its subdirectories recursively. 
 
