@@ -65,8 +65,6 @@ Finally, all NetBIOS names and their aliases of all SMB servers (Linux+Unix/Samb
 
 ## Linux CLI
 
-### `grep` snippets
-
 ### alternatives
 - Add manually Neovim to alternatives list
 ```bash
@@ -76,6 +74,8 @@ sudo update-alternatives --install /usr/bin/editor editor /snap/bin/nvim 1111
 ```bash
 sudo update-alternatives --config editor 
 ```
+
+### `grep` snippets
 
 Search for a specific pattern or text in files within a directory and its subdirectories recursively. 
 
