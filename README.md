@@ -84,6 +84,13 @@ grep -rn "pattern" /path/to/search
 grep -rn "example" .
 ```
 
+## Neovim + tmux input cursor
+
+```bash
+# Allowe for Neovim input cursor. https://vi.stackexchange.com/a/22239
+set -as terminal-overrides '*:Ss=\E[%p1%d q:Se=\E[2 q'
+```
+
 The `.` represents the current directory. Adjust the pattern and path as needed for your specific use case.
 
 # Audio Video
