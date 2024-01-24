@@ -86,6 +86,8 @@ grep -rn "example" .
 
 ## Neovim + tmux input cursor
 
+Add to `tmux.conf` file.
+
 ```bash
 # Allowe for Neovim input cursor. https://vi.stackexchange.com/a/22239
 set -as terminal-overrides '*:Ss=\E[%p1%d q:Se=\E[2 q'
