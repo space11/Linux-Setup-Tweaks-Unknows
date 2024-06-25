@@ -65,7 +65,14 @@ Finally, all NetBIOS names and their aliases of all SMB servers (Linux+Unix/Samb
 
 ## Linux CLI
 
+### Fastest Way To Copy a Directory In Linux - user `tar`
+
+```bash
+cd /path/to/SOURCE_FOLDER; tar cf - . | (cd /path/to/DESTINATION_FOLDER; tar xvf -)
+
+```
 ### alternatives
+
 - Add manually Neovim to alternatives list
 ```bash
 sudo update-alternatives --install /usr/bin/editor editor /snap/bin/nvim 1111
