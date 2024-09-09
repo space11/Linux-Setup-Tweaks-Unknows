@@ -107,4 +107,11 @@ The `.` represents the current directory. Adjust the pattern and path as needed 
 ## Edit video tracks - remove embeded subtitles
 https://github.com/mifi/lossless-cut?tab=readme-ov-file
 
+# Locale
+
+Set the keyboard using the X Keyboard Extensions.
+
+```bash
+setxkbmap pl
+```
 
