@@ -114,4 +114,18 @@ Set the keyboard using the X Keyboard Extensions.
 ```bash
 setxkbmap pl
 ```
+# i3-wm
 
+```bash
+## Modify // Carry Window to Next Free Workspace // <><Alt> ` ##
+set_from_resource $i3-wm.binding.take_next_free i3-wm.binding.take_next_free Mod1+grave
+bindsym $mod+$i3-wm.binding.take_next_free exec --no-startup-id /usr/bin/i3-next-workspace --move-window-and-follow
+
+# ## Navigate // Next Free Workspace // <> ` ##
+set_from_resource $i3-wm.binding.next_free i3-wm.binding.next_free grave
+bindsym $mod+$i3-wm.binding.next_free exec --no-startup-id /usr/bin/i3-next-workspace
+
+## Modify // Move Window to Next Free Workspace // <><Shift> ` ##
+set_from_resource $i3-wm.binding.move_next_free i3-wm.binding.move_next_free Shift+grave
+bindsym $mod+$i3-wm.binding.move_next_free exec --no-startup-id /usr/bin/i3-next-workspace --move-window
+```
