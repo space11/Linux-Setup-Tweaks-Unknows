@@ -129,3 +129,16 @@ bindsym $mod+$i3-wm.binding.next_free exec --no-startup-id /usr/bin/i3-next-work
 set_from_resource $i3-wm.binding.move_next_free i3-wm.binding.move_next_free Shift+grave
 bindsym $mod+$i3-wm.binding.move_next_free exec --no-startup-id /usr/bin/i3-next-workspace --move-window
 ```
+
+## Greenclip integration for ilia (rofi alternative used in Regolith 3)
+```bash
+## https://github.com/erebe/greenclip/tree/master
+## https://github.com/orgs/regolith-linux/discussions/953
+
+set $greenclip /home/borys/.local/bin/greenclip
+
+## Launch // clipboard selection // <><p>
+# copy to primary selection and clipboard. Install moreutils for `ifne` that prevents emptying the selection when nothing comes out of ilia
+bindsym $mod+p exec $greenclip print | ilia -p textlist -n -l "Clippboard" | ifne xclip -i -sel clipboard -f | ifne xclip -i -sel primar
+exec --no-startup-id $greenclip daemon
+```
